@@ -13,7 +13,7 @@ const LikeCounter = ({count, active, activeColor, handleLikes}) => (
       <span style={{marginRight: SPACING_XSMALL, display: 'inline-block'}}>
         <Icon name='thumbs-up' />
       </span>
-      <span>{count}</span>
+      <span>{count} likes</span>
     </div>
   </a>
 );

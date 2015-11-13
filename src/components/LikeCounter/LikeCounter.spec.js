@@ -15,11 +15,25 @@ describe('LikeCounter', () => {
     expect(actual).toEqual(expected);
   });
 
-  it('should render the like count', () => {
+  it('should render the initial like count', () => {
     const renderer = TestUtils.createRenderer();
     renderer.render(<LikeCounter count={5} />);
     const actual = renderer.getRenderOutput();
-    const expected = <span>5</span>;
+    const expected = '5 likes';
     expect(actual).toIncludeJSX(expected);
+  });
+  
+  it('should toggle a new like when clicked', () => {
+    const renderer = TestUtils.createRenderer();
+    renderer.render(<LikeCounter count={5} />);
+    renderer.getRenderOutput().props.onClick();
+    const actual = renderer.getRenderOutput();
+    console.log(`actual`, actual);
+    const expected = '6 likes';
+    expect(actual).toIncludeJSX(expected);
+  });
+
+  it('should toggle the active state when clicked', () => {
+    // TODO
   });
 });

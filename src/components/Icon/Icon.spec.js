@@ -5,7 +5,7 @@ import Icon from './Icon';
 
 describe('Icon', () => {
 
-  it('should render the icon type', () => {
+  it('should render the icon class', () => {
     const renderer = TestUtils.createRenderer();
     renderer.render(<Icon name='facebook' />);
     const actual = renderer.getRenderOutput().props.className;
