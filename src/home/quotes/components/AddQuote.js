@@ -1,6 +1,6 @@
 import React from 'react';
-import {cushion, button, input} from '../styleGuide';
-import createUniqueId from '../../utilities/createUniqueId';
+import {cushion, button, input} from '../../../utilities/styleGuide';
+import createUniqueId from '../../../utilities/createUniqueId';
 
 class AddQuote extends React.Component {
 

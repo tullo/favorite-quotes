@@ -1,4 +1,4 @@
-import {UPDATE_THEME_COLOR} from '../ActionTypes';
+import {UPDATE_THEME_COLOR} from '../../../state/ActionTypes';
 
 export default function themeReducer(state = {color: '#5DC4C6'}, action) {
   switch (action.type) {

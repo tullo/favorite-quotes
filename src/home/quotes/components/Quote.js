@@ -1,7 +1,7 @@
 import React from 'react';
-import {COLOR_FILL, COLOR_WARNING, container, cushion, emphasis, subtle, alignRight, spaceBetween, rounded} from '../styleGuide';
-import Icon from '../Icon/Icon';
-import LikeCounter from '../LikeCounter/LikeCounter';
+import {COLOR_FILL, COLOR_WARNING, container, cushion, emphasis, subtle, alignRight, spaceBetween, rounded} from '../../../utilities/styleGuide';
+import Icon from '../../../components/Icon';
+import LikeCounter from './LikeCounter';
 
 class Quote extends React.Component {
 

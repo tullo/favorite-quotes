@@ -1,5 +1,5 @@
 import expect from 'expect';
-import {UPDATE_THEME_COLOR} from '../ActionTypes';
+import {UPDATE_THEME_COLOR} from '../../../state/ActionTypes';
 import {updateThemeColor} from './themeActionCreators';
 
 describe('theme actions and action creators', () => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import {FONT_SIZE_LARGE} from '../styleGuide';
+import {FONT_SIZE_LARGE} from '../utilities/styleGuide';
 
 const Icon = ({name}) => {
   return (

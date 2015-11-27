@@ -8,8 +8,8 @@ describe('Icon', () => {
   it('should render the icon class', () => {
     const renderer = TestUtils.createRenderer();
     renderer.render(<Icon name='facebook' />);
-    const actual = renderer.getRenderOutput().props.className;
-    const expected = 'fa fa-facebook';
+    const actual = renderer.getRenderOutput().props.className.includes('facebook');
+    const expected = true;
     expect(actual).toEqual(expected);
   });
 });

@@ -1,5 +1,5 @@
-import quoteReducer from './quote/quoteReducer';
-import themeReducer from './theme/themeReducer';
+import quoteReducer from '../home/quotes/state/quoteReducer';
+import themeReducer from '../home/theme/state/themeReducer';
 
 export default function mainReducer(state = {}, action) {
   return {

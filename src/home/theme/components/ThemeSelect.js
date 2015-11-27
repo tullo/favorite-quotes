@@ -1,7 +1,7 @@
 import React from 'react';
 import 'react-colors-picker/assets/index.css';
 import ColorPicker from 'react-colors-picker';
-import {corner} from '../styleGuide';
+import {corner} from '../../../utilities/styleGuide';
 
 const ThemeSelect = ({updateThemeColor, theme}) => {
 

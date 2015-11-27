@@ -1,7 +1,7 @@
 import expect from 'expect';
+import {addQuoteById, removeQuoteById, likeQuoteById, unlikeQuoteById} from '../home/quotes/state/quoteActionCreators';
+import {updateThemeColor} from '../home/theme/state/themeActionCreators';
 import {store} from './store';
-import {addQuoteById, removeQuoteById, likeQuoteById, unlikeQuoteById} from './quote/quoteActionCreators';
-import {updateThemeColor} from './theme/themeActionCreators';
 
 describe('store', () => {
 

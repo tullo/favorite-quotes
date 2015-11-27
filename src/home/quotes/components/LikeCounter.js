@@ -1,6 +1,6 @@
 import React from 'react';
-import {COLOR_LIGHT_BLACK, SPACING_XSMALL} from '../styleGuide';
-import Icon from '../Icon/Icon';
+import {COLOR_LIGHT_BLACK, SPACING_XSMALL} from '../../../utilities/styleGuide';
+import Icon from '../../../components/Icon';
 
 const LikeCounter = ({count, active, activeColor, handleLikes}) => (
   <a

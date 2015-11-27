@@ -1,6 +1,6 @@
 import React from 'react';
-import {container} from '../styleGuide';
-import Quote from '../Quote/Quote';
+import {container} from '../../../utilities/styleGuide';
+import Quote from './Quote';
 
 const QuoteList = ({
   quotes,
