@@ -1,16 +1,18 @@
 import React from 'react';
 import {cushion, button, input} from '../../../utilities/styleGuide';
-import createUniqueId from '../../../utilities/createUniqueId';
+import createId from '../../../utilities/createId';
 
 class AddQuote extends React.Component {
 
   handleSubmit() {
     const textNode = this.refs.text;
+    const text = textNode.value.trim();
     const authorNode = this.refs.author;
+    const author = authorNode.value.trim();
     const payload = {
-      text: textNode.value.trim(),
-      author: authorNode.value.trim(),
-      id: createUniqueId(),
+      text,
+      author,
+      id: createId(Date.now(), text),
       likeCount: 0
     };
     this.props.addQuoteById(payload);

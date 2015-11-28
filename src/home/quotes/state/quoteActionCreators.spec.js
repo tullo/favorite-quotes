@@ -7,16 +7,16 @@ describe('quote actions and action creators', () => {
   describe('addQuoteById', () => {
 
     it('should create correct actions', () => {
-      const examplePayload = {
+      const payload = {
         text: 'Lorem ipsum',
         author: 'Jane Doe',
         id: 1,
         likeCount: 7
       };
-      const actual = addQuoteById(examplePayload);
+      const actual = addQuoteById(payload);
       const expected = {
         type: ADD_QUOTE_BY_ID,
-        payload: examplePayload
+        payload
       };
       expect(actual).toEqual(expected);
     });
@@ -25,13 +25,13 @@ describe('quote actions and action creators', () => {
   describe('removeQuoteById', () => {
 
     it('should create correct actions', () => {
-      const examplePayload = {
+      const payload = {
         id: 1
       };
-      const actual = removeQuoteById(examplePayload);
+      const actual = removeQuoteById(payload);
       const expected = {
         type: REMOVE_QUOTE_BY_ID,
-        payload: examplePayload
+        payload
       };
       expect(actual).toEqual(expected);
     });
@@ -40,13 +40,13 @@ describe('quote actions and action creators', () => {
   describe('likeQuoteById', () => {
 
     it('should create correct actions', () => {
-      const examplePayload = {
+      const payload = {
         id: 1
       };
-      const actual = likeQuoteById(examplePayload);
+      const actual = likeQuoteById(payload);
       const expected = {
         type: LIKE_QUOTE_BY_ID,
-        payload: examplePayload
+        payload
       };
       expect(actual).toEqual(expected);
     });
@@ -55,13 +55,13 @@ describe('quote actions and action creators', () => {
   describe('unlikeQuoteById', () => {
 
     it('should create correct actions', () => {
-      const examplePayload = {
+      const payload = {
         id: 1
       };
-      const actual = unlikeQuoteById(examplePayload);
+      const actual = unlikeQuoteById(payload);
       const expected = {
         type: UNLIKE_QUOTE_BY_ID,
-        payload: examplePayload
+        payload
       };
       expect(actual).toEqual(expected);
     });

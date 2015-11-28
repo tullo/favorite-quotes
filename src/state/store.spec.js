@@ -65,7 +65,8 @@ describe('store', () => {
         }
       ],
       theme: {
-        color: '#777777'
+        color: '#777777',
+        font: 'sans-serif'
       }
     };
 

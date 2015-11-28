@@ -59,7 +59,7 @@ class Quote extends React.Component {
             </a>
             <LikeCounter
               count={this.props.quote.likeCount}
-              active={this.state.liked}
+              isActive={this.state.liked}
               activeColor={this.props.theme.color}
               handleLikes={this.handleLikes.bind(this)}
             />

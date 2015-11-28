@@ -7,13 +7,13 @@ describe('theme actions and action creators', () => {
   describe('updateThemeColor', () => {
 
     it('should create correct actions', () => {
-      const examplePayload = {
+      const payload = {
         color: '#333333'
       };
-      const actual = updateThemeColor(examplePayload);
+      const actual = updateThemeColor(payload);
       const expected = {
         type: UPDATE_THEME_COLOR,
-        payload: examplePayload
+        payload
       };
       expect(actual).toEqual(expected);
     });
