@@ -1,4 +1,4 @@
-import quoteReducer from '../home/quotes/state/quoteReducer';
+import quoteReducer from '../home/quote/state/quoteReducer';
 import themeReducer from '../home/theme/state/themeReducer';
 
 export default function mainReducer(state = {}, action) {

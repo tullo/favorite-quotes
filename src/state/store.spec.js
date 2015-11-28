@@ -1,5 +1,5 @@
 import expect from 'expect';
-import {addQuoteById, removeQuoteById, likeQuoteById, unlikeQuoteById} from '../home/quotes/state/quoteActionCreators';
+import {addQuoteById, removeQuoteById, likeQuoteById, unlikeQuoteById} from '../home/quote/state/quoteActionCreators';
 import {updateThemeColor} from '../home/theme/state/themeActionCreators';
 import {store} from './store';
 

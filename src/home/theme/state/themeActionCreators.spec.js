@@ -2,7 +2,7 @@ import expect from 'expect';
 import {UPDATE_THEME_COLOR} from '../../../state/ActionTypes';
 import {updateThemeColor} from './themeActionCreators';
 
-describe('theme actions and action creators', () => {
+describe('themeActionCreators', () => {
 
   describe('updateThemeColor', () => {
 

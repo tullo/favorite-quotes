@@ -1,10 +1,10 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {wrapper, container} from './utilities/styleGuide';
-import {addQuoteById, removeQuoteById, likeQuoteById, unlikeQuoteById} from './home/quotes/state/quoteActionCreators';
+import {addQuoteById, removeQuoteById, likeQuoteById, unlikeQuoteById} from './home/quote/state/quoteActionCreators';
 import {updateThemeColor} from './home/theme/state/themeActionCreators';
-import AddQuote from './home/quotes/components/AddQuote';
-import QuoteList from './home/quotes/components/QuoteList';
+import AddQuote from './home/quote/components/AddQuote';
+import QuoteList from './home/quote/components/QuoteList';
 import ThemeSelect from './home/theme/components/ThemeSelect';
 
 class AppContainer extends React.Component {
