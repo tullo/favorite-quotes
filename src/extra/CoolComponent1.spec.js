@@ -9,8 +9,6 @@ const CoolComponent = ({greeting}) => (
   </div>
 );
 
-export default CoolComponent;
-
 describe('CoolComponent', () => {
 
   it('should...', () => {
