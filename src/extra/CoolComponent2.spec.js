@@ -13,16 +13,11 @@ const CoolComponent = ({greeting}) => (
 
 describe('CoolComponent', () => {
 
-  it('should...', () => {
+  it('should render the greeting', () => {
     const renderer = TestUtils.createRenderer();
     renderer.render(<CoolComponent greeting='hello world' />);
     const actual = renderer.getRenderOutput();
-    const expected = (
-      <div>
-        <h1>Greeting</h1>
-        <div>hello world!</div>
-      </div>
-    );
-    expect(actual).toEqualJSX(expected);
+    const expected = <div>hello world!</div>;
+    expect(actual).toIncludeJSX(expected);
   });
 });
