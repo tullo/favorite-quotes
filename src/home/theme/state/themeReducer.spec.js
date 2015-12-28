@@ -6,8 +6,7 @@ describe('themeReducer', () => {
 
   function stateBefore() {
     return {
-      color: '#A3BE89',
-      font: 'sans-serif'
+      color: '#A3BE89'
     };
   }
 
@@ -17,8 +16,7 @@ describe('themeReducer', () => {
     });
     const actual = themeReducer(stateBefore(), action);
     const expected = {
-      color: '#B38EAE',
-      font: 'sans-serif'
+      color: '#B38EAE'
     };
     expect(actual).toEqual(expected);
   });
