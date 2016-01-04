@@ -1,6 +1,6 @@
 # favorite-quotes
 
-A React application built to go along with some Egghead.io video lessons. The app lets you add quotes (author and quote text), and then like or remove them from your quote list. You can also change the color theme of your quote list.
+An example React application (with tests). The app lets you add quotes (author and quote text), and then like or remove them from your quote list. You can also change the color theme of your quote list.
 
 ## Accompanying Video Lessons
 
