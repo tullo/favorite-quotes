@@ -15,5 +15,6 @@ describe('CoolComponent', () => {
     const renderer = TestUtils.createRenderer();
     renderer.render(<CoolComponent greeting='hello world' />);
     renderer.getRenderOutput().props.children;
+    //console.log(renderer.getRenderOutput());
   });
 });

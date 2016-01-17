@@ -20,7 +20,7 @@ describe('LikeCounter', () => {
     renderer.render(<LikeCounter count={5} />);
     const actual = renderer.getRenderOutput();
     const expected = '5 likes';
-    expect(actual).toIncludeJSX(expected);
+    expect(actual).toIncludeJSX(expected); //  avoids walking the structure with actual.props.children.props.children and so on
   });
 
   describe('isActive', () => {
